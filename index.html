@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO</title>
+    <link rel="stylesheet" href="assets/css/todo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/todo.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="assets/images/TODO.svg" alt="" />
+        <img src="assets/images/Combined Shape.svg" alt="" />
+      </div>
+      <div class="todo-add-delete">
+        <input type="checkbox" id="Add" />
+        <input type="text" placeholder="Create a new todo..." id="addInput" />
+      </div>
+      <div class="content-section">
+        <ul id="todoList">
+          <li id="todoItem" class="todo-item">
+            <div class="remove-left">
+              <input class="checkbox-class" type="checkbox" id="addTo" />
+              <h6>Complete online JavaScript course</h6>
+            </div>
+            <button id="removeBtn">X</button>
+          </li>
+        </ul>
+
+        <li class="counter">
+          <p><span id="itemCount">5 </span>items left</p>
+          <p>Clear completed</p>
+        </li>
+      </div>
+      <div class="footer">
+        <button>All</button>
+        <button>Active</button>
+        <button>Completed</button>
+      </div>
+    </div>
+  </body>
+</html>
